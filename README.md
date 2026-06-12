@@ -4,7 +4,7 @@
 
 **A stunning, animated developer portfolio built with pure HTML, CSS & Vanilla JavaScript.**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-6C63FF?style=for-the-badge&logo=github&logoColor=white)](https://popzdesigngroup-gif.github.io/Portfolio/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-6C63FF?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-seven-chi-rmhcsvuljb.vercel.app)
 [![License](https://img.shields.io/badge/License-MIT-00D4FF?style=for-the-badge)](LICENSE)
 
 <br>
