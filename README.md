@@ -92,14 +92,7 @@ open index.html    # macOS
 No `npm install`. No build step. No server required.
 
 ---
-
-## 🌐 Deploy with GitHub Pages
-
-1. Go to **Settings** → **Pages** in this repo
-2. Set **Source** to `Deploy from a branch`
-3. Select **main** / `/ (root)`
-4. Click **Save**
-5. Your site goes live at: `https://popzdesigngroup-gif.github.io/Portfolio/`
+my portfolio: `https://popzdesigngroup-gif.github.io/Portfolio/`
 
 ---
 
