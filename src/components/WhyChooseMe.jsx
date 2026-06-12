@@ -16,7 +16,7 @@ export default function WhyChooseMe() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold mb-4"
@@ -29,11 +29,11 @@ export default function WhyChooseMe() {
           {reasons.map((reason, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="glass p-6 rounded-2xl flex flex-col items-center text-center hover:border-accent/50 transition-colors group"
+              className="glass p-6 rounded-2xl flex flex-col items-center text-center hover:border-accent/50 transition-colors group will-change-transform"
             >
               <div className="text-cyan mb-4 group-hover:scale-110 transition-transform duration-300">
                 {reason.icon}

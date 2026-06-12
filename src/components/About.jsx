@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" className="section-pad relative bg-gradient-to-t from-accent/5 to-transparent">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-3xl md:text-5xl font-display font-bold mb-8"
@@ -14,11 +14,11 @@ export default function About() {
         </motion.h2>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="glass p-8 md:p-12 rounded-3xl"
+          className="glass p-8 md:p-12 rounded-3xl will-change-transform"
         >
           <p className="text-lg md:text-xl text-text-main leading-relaxed mb-6">
             Hi, I’m <strong>Pranav</strong> — a frontend developer helping small businesses create modern, responsive, and professional websites that build trust and attract customers.

@@ -37,12 +37,12 @@ const certs = [
 export default function Certifications() {
   return (
     <section className="section-pad relative">
-      <div className="absolute top-1/2 left-0 w-[400px] h-[400px] bg-cyan/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/4" style={{ background: 'radial-gradient(circle, rgba(0,212,255,0.06) 0%, rgba(0,212,255,0) 70%)' }} />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold mb-4"
@@ -55,11 +55,11 @@ export default function Certifications() {
           {certs.map((cert, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="glass p-8 rounded-2xl flex flex-col hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 group"
+              className="glass p-8 rounded-2xl flex flex-col hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 group will-change-transform"
             >
               <div className="flex items-start justify-between mb-6">
                 <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:scale-110 transition-transform">

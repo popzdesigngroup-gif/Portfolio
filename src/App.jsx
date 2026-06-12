@@ -1,27 +1,32 @@
+import { lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Services from './components/Services';
-import WhyChooseMe from './components/WhyChooseMe';
-import Work from './components/Work';
-import Process from './components/Process';
-import Certifications from './components/Certifications';
-import About from './components/About';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+// Lazy load below-the-fold components for faster initial paint
+const Services = lazy(() => import('./components/Services'));
+const WhyChooseMe = lazy(() => import('./components/WhyChooseMe'));
+const Work = lazy(() => import('./components/Work'));
+const Process = lazy(() => import('./components/Process'));
+const Certifications = lazy(() => import('./components/Certifications'));
+const About = lazy(() => import('./components/About'));
+const Contact = lazy(() => import('./components/Contact'));
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-text-main font-body">
+    <div className="min-h-screen bg-background text-text-main font-body selection:bg-accent/30 selection:text-white">
       <Navbar />
       <main>
         <Hero />
-        <Services />
-        <WhyChooseMe />
-        <Work />
-        <Process />
-        <Certifications />
-        <About />
-        <Contact />
+        <Suspense fallback={<div className="h-32 flex items-center justify-center opacity-50">Loading...</div>}>
+          <Services />
+          <WhyChooseMe />
+          <Work />
+          <Process />
+          <Certifications />
+          <About />
+          <Contact />
+        </Suspense>
       </main>
       <Footer />
     </div>

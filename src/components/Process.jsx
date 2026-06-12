@@ -30,7 +30,7 @@ export default function Process() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-display font-bold mb-4"
@@ -47,11 +47,11 @@ export default function Process() {
             {steps.map((step, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.15 }}
-                className="relative flex flex-col items-center text-center"
+                className="relative flex flex-col items-center text-center will-change-transform"
               >
                 <div className="w-20 h-20 rounded-2xl glass flex items-center justify-center text-accent mb-6 relative z-10 hover:scale-110 hover:border-accent/50 transition-all duration-300">
                   {step.icon}

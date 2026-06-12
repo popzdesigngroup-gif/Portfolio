@@ -4,12 +4,12 @@ import { Mail, Phone, MapPin, ArrowRight, Download } from 'lucide-react';
 export default function Contact() {
   return (
     <section id="contact" className="section-pad relative">
-      {/* Background Gradients */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-accent/20 rounded-full blur-[150px] pointer-events-none" />
+      {/* Background Gradients (Optimized) */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(108,99,255,0.12) 0%, rgba(108,99,255,0) 70%)' }} />
 
       <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-12"
@@ -23,7 +23,7 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
