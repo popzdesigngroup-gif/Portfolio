@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0A0A0F;
+  --color-card: rgba(15, 15, 25, 0.65);
+  --color-accent: #6C63FF;
+  --color-accent-hover: #8B7BFF;
+  --color-cyan: #00D4FF;
+  --color-text-main: #F0F0F5;
+  --color-text-dim: #9B9BB0;
+  --color-text-muted: #6B6B80;
+  
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) var(--color-background);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--color-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(108, 99, 255, 0.15);
+  }
+
+  .glow-text {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-btn {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-hover));
+    transition: all 0.3s ease;
+  }
+
+  .gradient-btn:hover {
+    box-shadow: 0 10px 40px rgba(108, 99, 255, 0.35);
+    transform: translateY(-3px) scale(1.03);
+  }
+
+  .section-pad {
+    padding: 120px 0;
+  }
+}
